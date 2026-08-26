@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ОПП «Професійна освіта. Цифрові технології»</title>
+<style>
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --text:#17324d;
+  --muted:#65788b;
+  --primary:#1f6feb;
+  --primary-dark:#1557b0;
+  --accent:#36b37e;
+  --border:#dce6f0;
+  --shadow:0 10px 30px rgba(35,65,95,.10);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial,sans-serif;
+  color:var(--text);
+  background:linear-gradient(135deg,#f4f7fb 0%,#eaf2fb 100%);
+  min-height:100vh;
+}
+.container{max-width:1100px;margin:0 auto;padding:32px 20px 50px}
+.hero{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:42px 34px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.badge{
+  display:inline-block;
+  padding:7px 14px;
+  border-radius:999px;
+  background:#e8f1ff;
+  color:var(--primary-dark);
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+h1{margin:0;font-size:clamp(30px,5vw,46px);line-height:1.12}
+.hero p{max-width:760px;margin:16px auto 0;color:var(--muted);font-size:17px;line-height:1.6}
+.section-title{margin:34px 0 16px;font-size:24px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card{
+  display:flex;flex-direction:column;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:26px;
+  box-shadow:var(--shadow);
+  text-decoration:none;color:inherit;
+  transition:.2s transform,.2s box-shadow,.2s border-color;
+}
+.card:hover{transform:translateY(-4px);border-color:#9fc2ee;box-shadow:0 16px 35px rgba(35,65,95,.15)}
+.card-icon{
+  width:48px;height:48px;border-radius:14px;
+  display:grid;place-items:center;
+  background:#e9f4ff;color:var(--primary);
+  font-size:24px;margin-bottom:16px;
+}
+.card h2{font-size:21px;margin:0 0 10px}
+.card p{margin:0;color:var(--muted);line-height:1.55;flex:1}
+.link{margin-top:20px;color:var(--primary);font-weight:700}
+.years{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+.year{
+  background:var(--card);border:1px solid var(--border);border-radius:18px;
+  padding:22px;text-align:center;text-decoration:none;color:var(--text);
+  box-shadow:var(--shadow);font-size:22px;font-weight:800;
+  transition:.2s;
+}
+.year:hover{transform:translateY(-3px);border-color:#9fc2ee;color:var(--primary)}
+.year small{display:block;font-size:13px;color:var(--muted);font-weight:500;margin-top:7px}
+.back{display:inline-block;margin-bottom:20px;text-decoration:none;color:var(--primary);font-weight:700}
+.note{
+  margin-top:24px;padding:16px 18px;border-radius:14px;
+  background:#f8fbff;border:1px dashed #b8cde5;color:var(--muted);line-height:1.55;
+}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
+@media(max-width:760px){
+  .cards{grid-template-columns:1fr}
+  .years{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero{padding:32px 22px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="back" href="../">← На головну</a>
+<section class="hero">
+  <span class="badge">Структурно-логічні схеми</span>
+  <h1>ОПП «Професійна освіта. Цифрові технології»</h1>
+  <p>Оберіть рік, щоб переглянути відповідну структурно-логічну схему.</p>
+</section>
+<h2 class="section-title">Рік ОПП</h2>
+<section class="years"><a class="year" href="2023/">2023<small>Переглянути схему</small></a>
+<a class="year" href="2024/">2024<small>Переглянути схему</small></a>
+<a class="year" href="2025/">2025<small>Переглянути схему</small></a>
+<a class="year" href="2026/">2026<small>Переглянути схему</small></a></section>
+
+<footer>Цифровий ресурс структурно-логічних схем ОПП</footer>
+</div>
+</body>
+</html>
